@@ -11,9 +11,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class WelcomeController {
 
     @GetMapping("/welcome")
-    public ResponseEntity<String> welcome() {
-        String welcomeMessage = "Hello World!";
-        return new ResponseEntity<>(welcomeMessage, HttpStatus.OK);
+    public String welcome() {
+        return "welcome";
     }
 
 }
